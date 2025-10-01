@@ -1,0 +1,62 @@
+footer {
+  background-color: #1E90FF; /* Darker blue */
+  color: white;
+  padding: 15px 20px;
+  flex-shrink: 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* vertically center both sides */
+  flex-wrap: wrap;
+}
+
+/* Left side */
+.footer-left p {
+  margin: 0;
+}
+
+/* Right side */
+.footer-right {
+  display: flex;
+  align-items: center; /* vertically center links + icons */
+  gap: 15px; /* space between links and icons */
+}
+
+/* Links with separators */
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 0 5px;
+  position: relative;
+}
+
+.footer-links a:not(:last-child)::after {
+  content: "|";
+  color: white;
+  margin-left: 5px;
+}
+
+/* Social icons as circles */
+.footer-socials a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: white;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.footer-socials a img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-socials a:hover {
+  transform: scale(1.1);
+}
